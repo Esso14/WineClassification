@@ -1,0 +1,15 @@
+
+nympy
+pandas
+
+pickle
+joblib
+
+click
+
+python-dotenv
+
+colorama
+matplotlib
+requests
+requests-cache
