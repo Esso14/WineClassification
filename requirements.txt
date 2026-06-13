@@ -1,0 +1,16 @@
+
+nympy
+pandas
+ydata-profiling
+
+pickle
+joblib
+
+click
+
+python-dotenv
+
+colorama
+matplotlib
+requests
+requests-cache
