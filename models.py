@@ -42,7 +42,7 @@ class ModelFactory:
 
         return models
     
-    #---- Grid search models -------
+    #---- Grid search models ------- 
     @classmethod
     def create_grid_search_models(cls, gs_config: dict):
 

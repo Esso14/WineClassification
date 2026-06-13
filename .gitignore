@@ -4,9 +4,9 @@ __pycache__/
 # Ignore compiled Python files
 *.pyc
 
-# Ignore sensitive configuration files and databases
+# Ignore sensitive configuration files and genereted data
 .env
-data/weather.db
+data/
 
 # Ignore log files
 logs/
