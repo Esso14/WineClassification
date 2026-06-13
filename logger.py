@@ -18,7 +18,7 @@ formatter = logging.Formatter('%(asctime)s - [%(levelname)s] - %(name)s - %(mess
 #---- File Handler ----
 file_handler = RotatingFileHandler("logs/app.log", encoding="utf-8", maxBytes=1*1024*1024, backupCount=3)
 file_handler.setLevel(logging.INFO)
-file_handler.setFormater(formatter)
+file_handler.setFormatter(formatter)
 
 #---- Console Handler ----
 class ColorFormatter(logging.Formatter):
