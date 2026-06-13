@@ -40,11 +40,11 @@ WineClassification/
 │   └── 
 │
 ├── data/
-│   └── dataset.csv
 │   └── data_process_<date-time>
-│        └── data_profile
-│        └── model
-│        └── model_db
+│        └── df_file.csv
+│        └── profile_report.txt
+│        └── profile.html
+│        └── 
 │
 ├── logs/
 │   └── app.log
@@ -52,7 +52,7 @@ WineClassification/
 ├── app.py
 ├── config.py
 ├── models.py
-├── db.py
+├── utils.py
 ├── profiler.py
 ├── preprocessing.py
 ├── processing.py
@@ -76,7 +76,15 @@ WineClassification/
 
 ---
 
-## Running the project
+## Running the project:
+
+A new folder with the current date and timestamp will be create for each running to store all results (folder exemple: data_process_2026-06-12_120420)
+
+### Generate and save a CSV file 
+  `python3 app.py generate-csv`  --> df_file.csv
+
+### Generate, save and profile a CSV file
+  `python3 app.py profile-csv`   --> df_file.csv, profile_report.txt and profile.html
 
 ---
 
