@@ -53,8 +53,10 @@ WineClassification/
 │
 ├── app.py
 ├── config.py
+├── models.py
 ├── db.py
 ├── profile.py
+├── preprocessing.py
 ├── processing.py
 ├── .gitignore
 ├── README.md
@@ -69,6 +71,10 @@ WineClassification/
 ---
 
 ## Installation & Setup
+
+### 1. Clone the repository
+
+`git clone <https://github.com/Esso14/WineClassification>`
 
 ---
 
