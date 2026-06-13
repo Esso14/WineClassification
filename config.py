@@ -5,7 +5,7 @@ class ConfigManager:
 
     def __init__(self, config_path: str):
         self.config_path = config_path
-        self.config = self._load()
+        self._config = self._load()
 
     def _load(self) -> dict:
         with open(self.config_path, "r", encoding="utf-8") as file:

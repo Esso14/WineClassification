@@ -14,7 +14,7 @@ class FileManager:
         folder_name = f"{prefix}_{timestamp}"
 
         try:
-            path = Path(folder_name)
+            path = Path("data") / folder_name
             path.mkdir(parents=True, exist_ok=True)
             success(f"The folder {path} was created successfully.")
 
