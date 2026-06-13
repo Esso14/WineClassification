@@ -39,14 +39,12 @@ WineClassification/
 │   └── config.json
 │   └── 
 │
-├── csv_files/
+├── data/
 │   └── dataset.csv
-│   └── dataset_scaled.csv
-│ 
-├── training_results/
 │   └── data_process_<date-time>
-│   └── model
-│   └── model.db
+│        └── data_profile
+│        └── model
+│        └── model_db
 │
 ├── logs/
 │   └── app.log
@@ -55,7 +53,7 @@ WineClassification/
 ├── config.py
 ├── models.py
 ├── db.py
-├── profile.py
+├── profiler.py
 ├── preprocessing.py
 ├── processing.py
 ├── .gitignore
