@@ -1,6 +1,7 @@
 
 nympy
 pandas
+ydata-profiling
 
 pickle
 joblib
