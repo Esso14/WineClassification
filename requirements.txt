@@ -4,6 +4,7 @@ pandas
 ydata-profiling
 mlflow
 streamlit
+scikitlearn
 
 pickle
 joblib

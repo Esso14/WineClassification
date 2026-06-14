@@ -54,7 +54,7 @@ WineClassification/
 │
 ├── app_process.py
 ├── config.py
-├── 
+├── app.py
 ├── utils.py
 ├── profiler.py
 ├── logger.py
@@ -91,6 +91,12 @@ A new folder with the current date and timestamp will be create for each running
 
 ### Fit and save model + Generate, save and profile a CSV file
   `python3 app_process.py profile-csv`   --> report and joblib-model
+
+---
+
+## Test the wine classification App
+  - Single wine 
+  - Batch prediction (csv fil upload)
 
 ---
 
