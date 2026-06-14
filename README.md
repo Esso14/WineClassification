@@ -41,7 +41,10 @@ WineClassification/
 │
 ├── data/
 │   └── data_process_<date-time>
+│        └── best_ml_model.joblib
+│        └── best_model_metadata.json
 │        └── df_file.csv
+│        └── pipeline_exatract_results.csv
 │        └── profile_report.txt
 │        └── profile.html
 │        └── 
@@ -49,12 +52,12 @@ WineClassification/
 ├── logs/
 │   └── app.log
 │
-├── app.py
+├── app_process.py
 ├── config.py
-├── models.py
+├── app.py
 ├── utils.py
 ├── profiler.py
-├── preprocessing.py
+├── logger.py
 ├── processing.py
 ├── .gitignore
 ├── README.md
@@ -81,10 +84,19 @@ WineClassification/
 A new folder with the current date and timestamp will be create for each running to store all results (folder exemple: data_process_2026-06-12_120420)
 
 ### Generate and save a CSV file 
-  `python3 app.py generate-csv`  --> df_file.csv
+  `python3 app_process.py generate-csv`  --> df_file.csv
 
 ### Generate, save and profile a CSV file
-  `python3 app.py profile-csv`   --> df_file.csv, profile_report.txt and profile.html
+  `python3 app_process.py profile-csv`   --> df_file.csv, profile_report.txt and profile.html
+
+### Fit and save model + Generate, save and profile a CSV file
+  `python3 app_process.py profile-csv`   --> report and joblib-model
+
+---
+
+## Test the wine classification App
+  - Single wine 
+  - Batch prediction (csv fil upload)
 
 ---
 
