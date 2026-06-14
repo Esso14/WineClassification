@@ -1,5 +1,5 @@
 
-nympy
+numpy
 pandas
 ydata-profiling
 mlflow
