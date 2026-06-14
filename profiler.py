@@ -56,7 +56,7 @@ class DataProfiler:
 
         column_datatypes = self.df.dtypes
 
-        self.df_information = {
+        self.df_info = {
             "num_columns": num_columns,
             "num_rows": num_rows,
             "column_datatypes": column_datatypes,
@@ -64,7 +64,7 @@ class DataProfiler:
             "nan_values_per_column": self.df.isnull().sum()
         }
 
-        self.df_statistic = {
+        self.df_statistics = {
             'Mean_value': self.df.mean(),
             'Median': self.df.median(),
             'Minimum': self.df.min(),
@@ -83,23 +83,23 @@ class DataProfiler:
             file.write(f"\n{date_now}\n")
             file.write(35 * "-")
 
-            file.write(f"\nNumber of columns: {self.df_information['num_columns']}")
-            file.write(f"\nNumber of rows: {self.df_information['num_rows']}")
-            file.write(f"\nNumber of duplicated rows: {self.df_information['num_duplicates']}")
+            file.write(f"\nNumber of columns: {self.df_info['num_columns']}")
+            file.write(f"\nNumber of rows: {self.df_info['num_rows']}")
+            file.write(f"\nNumber of duplicated rows: {self.df_info['num_duplicates']}")
 
             file.write("\n\nData types:\n")
             file.write(35 * "-")
             file.write("\n")
-            file.write(str(self.df_information['column_datatypes']))
+            file.write(str(self.df_info['column_datatypes']))
 
             file.write("\n\nNAN Values per column\n")
             file.write(35 * "-")
-            for col, val in self.df_information['nan_values_per_column'].items():
+            for col, val in self.df_info['nan_values_per_column'].items():
                 file.write(f"\n{col}: {val}")
 
             file.write("\n\nStatistics:\n")
             file.write(35 * "-")
-            for col, val in self.df_statistic.items():
+            for col, val in self.df_statistics.items():
                 file.write(f"\n{col}:\n--------\n{val}\n")
 
             return True
