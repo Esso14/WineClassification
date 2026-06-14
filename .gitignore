@@ -17,3 +17,4 @@ CSV_files/
 training_results/
 
 .DS_Store
+.streamlit/
