@@ -98,6 +98,8 @@ A new folder with the current date and timestamp will be create for each running
   - Single wine 
   - Batch prediction (csv fil upload)
 
+  [Start Wine Classification App](https://wineclassificationapp-ncpwacjpv5syeemp3kxbfo.streamlit.app)
+  
 ---
 
 ## Technologie used
